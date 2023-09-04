@@ -205,17 +205,17 @@ Parameters:
   GitHubRepo:
     Type: String
     Description: Name of Retail Demo Store GitHub repository. Will almost always be 'retail-demo-store'.
-    Default: retail-demo-store
+    Default: recommendation-engine
 
   GitHubBranch:
     Type: String
     Description: Name of GitHub branch within the GitHub repository to link to this Retail Demo Store deployment.
-    Default: master
+    Default: sept-4-web-ui
 
   GitHubUser:
     Type: String
     Description: If you are linking and deploying from a fork of the Retail Demo Store repository, enter your GitHub username. Otherwise, use the default of 'aws-samples' to link to the upstream repository.
-    Default: aws-samples
+    Default: coolgreenhat
 
   GitHubToken:
     Type: String
