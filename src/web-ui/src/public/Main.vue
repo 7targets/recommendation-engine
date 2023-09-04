@@ -8,7 +8,7 @@
         :experiment="featuredProductsExperiment"
       >
         <template #heading>
-          Featured products
+          Consumer Purchased
           <DemoGuideBadge
             v-if="featuredProductsDemoGuideBadgeArticle"
             :article="featuredProductsDemoGuideBadgeArticle"
