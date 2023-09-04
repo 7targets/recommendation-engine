@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/" aria-label="home"><img src="/logo.svg" class="img-fluid"/></router-link>
+  <router-link to="/" aria-label="home"><h4>Recommendation Engine</h4></router-link>
 </template>
 
 <script>
