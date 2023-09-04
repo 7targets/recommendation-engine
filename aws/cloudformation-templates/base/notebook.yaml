@@ -69,7 +69,7 @@ Resources:
       GitConfig:
         Branch: !Ref GitHubBranch
         RepositoryUrl:  !Sub
-        - 'https://github.com/${User}/retail-demo-store.git'
+        - 'https://github.com/${User}/recommendation-engine.git'
         - { User: !If [ UseDefaultGitHubUser, 'aws-samples', !Ref GitHubUser ] }
   NotebookInstance:
     Type: AWS::SageMaker::NotebookInstance
