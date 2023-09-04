@@ -215,7 +215,7 @@ Parameters:
   GitHubUser:
     Type: String
     Description: If you are linking and deploying from a fork of the Retail Demo Store repository, enter your GitHub username. Otherwise, use the default of 'aws-samples' to link to the upstream repository.
-    Default: coolgreenhat
+    Default: 7targets
 
   GitHubToken:
     Type: String
