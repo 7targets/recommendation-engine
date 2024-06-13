@@ -15,15 +15,10 @@
 
     <slot v-if="!isLoading"></slot>
 
-    <TextAlerts v-if="showTextAlerts" class="mt-5"></TextAlerts>
-
-    <Footer v-if="showFooter" class="my-4 container"></Footer>
-
     <AppModal></AppModal>
 
     <ConfirmationModal></ConfirmationModal>
 
-    <DemoGuideButton v-if="showDemoGuide" class="demo-guide-button"></DemoGuideButton>
   </div>
 </template>
 

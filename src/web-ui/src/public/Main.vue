@@ -1,49 +1,6 @@
 <template>
   <Layout>
     <div class="container">
-      <section class="mb-5">
-        <div v-if="userRecommendationsTitle" class="mb-3 text-left">
-          <h2 class="recommendations-heading">
-            {{ userRecommendationsTitle }}
-            <DemoGuideBadge
-              v-if="userRecommendationsDemoGuideBadgeArticle"
-              :article="userRecommendationsDemoGuideBadgeArticle"
-              hideTextOnSmallScreens
-            ></DemoGuideBadge>
-          </h2>
-          <div v-if="recommendationsExperiment" class="recommendation-explanation text-muted small">
-            <i class="fa fa-balance-scale px-1"></i>
-            {{ recommendationsExperiment }}
-          </div>
-        </div>
-
-        <div
-          v-if="
-            personalizeUserID &&
-              ((isLoadingRecommendations && !userRecommendations) || (!isLoadingRecommendations && userRecommendations))
-          "
-        >
-          <LoadingFallback v-if="!userRecommendations" class="col my-4 text-center"></LoadingFallback>
-
-          <div v-else class="user-recommendations">
-            <Product
-              v-for="item in userRecommendations"
-              :key="item.product.id"
-              :product="item.product"
-              :experiment="item.experiment"
-              :promotionName="item.promotionName"
-              :feature="featureUserRecs"
-            ></Product>
-          </div>
-        </div>
-
-        <div v-if="!isLoadingRecommendations && !userRecommendationsTitle" class="text-left">
-          <em>
-            Personalized recommendations do not appear to be enabled for this instance of the storefront yet. Please complete the Personalization workshop labs to add personalized capabilities.
-            In the meantime, the default user experience will provide product information directly from the catalog.
-          </em>
-        </div>
-      </section>
 
       <RecommendedProductsSection
         :feature="featureRerank"
@@ -51,7 +8,7 @@
         :experiment="featuredProductsExperiment"
       >
         <template #heading>
-          Featured products
+          Consumer Purchased
           <DemoGuideBadge
             v-if="featuredProductsDemoGuideBadgeArticle"
             :article="featuredProductsDemoGuideBadgeArticle"

@@ -2,13 +2,6 @@
   <nav class="navigation fixed-top pt-2 pb-3 p-lg-1">
     <div class="nav-contents container d-lg-flex align-items-center">
       <HomeLink class="logo"></HomeLink>
-      <ShopDropdown class="shop mx-lg-2"></ShopDropdown>
-      <Search class="search mx-lg-4"></Search>
-      <UserDropdown class="user-dropdown"></UserDropdown>
-      <NavSeparator class="d-none d-lg-block mx-2"></NavSeparator>
-      <SupportLink class="support"></SupportLink>
-      <NavSeparator class="sep-2 mx-2"></NavSeparator>
-      <CartLink class="cart"></CartLink>
     </div>
   </nav>
 </template>
@@ -44,8 +37,7 @@ export default {
 }
 
 .logo {
-  grid-area: Logo;
-  width: 80px;
+  width: 300px;
 }
 
 .shop {
@@ -90,7 +82,7 @@ export default {
 
 @media (min-width: 992px) {
   .logo {
-    width: 120px;
+    width: 400px;
   }
 
   .search {
